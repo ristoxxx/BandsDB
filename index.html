@@ -8,8 +8,7 @@
   <body>
     <div>
       <form>
-		<h1>Title</h1>
-        <h1>Login to start creating a burger!</h1>
+        <h1>Login to add bands to BandsDB!</h1>
         <label for="username">Username:</label>
   			<input type="text" name="username" id="username">
         <br>
@@ -21,8 +20,26 @@
       <form>
         <h1>Add band</h1>
         <label for="BandMemberCount">Band members number</label>
-		<input name="BandMemberCount" id="BandMemberCount" type="number" step="1" >  
-        <input name="BandScore" id="BandScore" type="range" min="0" max="5"  step="0.5"> 
+        <br>
+		<input name="BandMemberCount" id="BandMemberCount" type="number" step="1" >
+        <br>  
+        <label for="BandScore">Band score in ****</label>
+        <br>
+        <input name="BandScore" id="BandScore" type="range" min="0" max="5"  step="0.5">
+        <br>
+        <div class="toppings">
+            <span>Instruments in the band</span>
+            <br>
+            <input id="bass" name="instrument" type="checkbox" value="bass">
+            <label for="bass">Bass</label>
+            <input id="drums" name="instrument" type="checkbox" value="drums">
+            <label for="drums">Drums</label>
+            <!--Add your code below for the third checkbox-->
+            <input id="piano" name="instrument" type="checkbox" value="piano">
+            <label for="piano">Piano</label>
+  
+  
+        </div>
       </form>
     </div>
   </body>
